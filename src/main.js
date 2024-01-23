@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import vClickOutside from 'vue-click-outside';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.directive('click-outside', vClickOutside);
+app.mount('#app');
